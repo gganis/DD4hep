@@ -20,7 +20,7 @@
       <check vis="Shape1_vis">
         <shape type="CAD_Shape" ref="${DD4hepExamplesINSTALL}/examples/DDCAD/models/STL/FCCee_IR_sample.stl" mesh="0"/>
       </check>
-      <test  type="DD4hep_Mesh_Verifier" ref="${DD4hepExamplesINSTALL}/examples/DDCAD/ref/Ref_FCCee_IR_sample.txt" create="CheckShape_create"/>
+      <test  type="DD4hep_Mesh_Verifier" ref="${DD4hepExamplesINSTALL}/examples/DDCAD/ref/Ref_STL_FCCee_IR_sample.txt" create="CheckShape_create"/>
     </detector>
   </detectors>
 </lccdd>
