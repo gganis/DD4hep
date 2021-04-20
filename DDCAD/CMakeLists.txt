@@ -93,9 +93,12 @@ endif()
 target_include_directories(DDCAD
   PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>
+  $<BUILD_INTERFACE:${ASSIMP_INCLUDE_DIRS}>
   $<INSTALL_INTERFACE:include>
 )
-target_link_libraries(DDCAD PUBLIC DD4hep::DDCore assimp::assimp )
+
+# target_link_libraries(DDCAD PUBLIC DD4hep::DDCore assimp::assimp )
+target_link_libraries(DDCAD PUBLIC DD4hep::DDCore /Users/ganis/local/assimp/install/lib/${ASSIMP_LIBRARIES} )
 
 dd4hep_add_plugin(DDCADPlugins
   SOURCES src/plugins/*.cpp
